@@ -1,0 +1,113 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+body{
+    background-color: var(--Stone-100);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: var(--Stone-600);
+    margin: 20px;
+    padding: 0;
+}
+.cabeza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.titulo{
+    
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Stone-900);
+}
+.texto{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--Stone-600);
+}
+.time{
+    background-color: rgba(173, 83, 176, 0.281);
+    padding: 16px;
+    border-radius: 20%;
+    margin: 24px 20px;
+
+}
+.time h3{
+    color: var(--Rose-800);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.time ul{
+    list-style: disc inside;
+    padding-left: 0;
+}
+.time li{
+    margin-bottom: 6px;
+    color: var(--Stone-900);
+}
+.ingredientes, .instrucciones{
+    margin-top: 24px;
+}
+.ingredientes h2, .instrucciones h2, .nutrition h2{
+    font-family: 'Young serif', serif;
+    color: var(--Brown-800);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.ingredientes ul{
+    padding-left: 20px;
+}
+.ingredientes li, .instrucciones li{
+    margin-bottom: 10px;
+    color: var(--Stone-900);
+    line-height: 1.6;
+}
+.instrucciones ol{
+    padding-left: 20px;
+    counter-reset: step;
+}
+.instrucciones li{
+    counter-increment: step;
+}
+.instrucciones li::marker{
+    font-weight: bold;
+    color: var(--Brown-800);
+}
+.imagen{
+    max-width: 600px;
+    margin: 48px auto;
+    background-color: var(--White);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.main-img{
+    width:100%;
+    border-radius: 12px;
+}
+h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 2.2rem;
+    color: var(--Stone-900);
+    margin-top: 20px;
+}
+.nutrition p{
+    color: var(--Stone-600);
+    margin-bottom: 12px;
+}
+.nutrition_tabla div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--Stone-150);
+    color: var(--Stone-900);   
+}
